@@ -1,0 +1,103 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+.landing-page {
+  text-align: center;
+  background: url("../public/background.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.get-started {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+.start-generating {
+  position: relative;
+}
+
+.glow {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+  border-radius: 3vw;
+  box-shadow: 0 0 7px #90eb19f5, 0 0 10px #a8ff35f5, 0 0 10px #a8ff35f5,
+    0 0 10px #a8ff35f5, 0 0 11px #a8ff35f5, 0 0 10px #a8ff35f5,
+    0 0 10px #a8ff35f5, 0 0 10px #a8ff35f5;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
